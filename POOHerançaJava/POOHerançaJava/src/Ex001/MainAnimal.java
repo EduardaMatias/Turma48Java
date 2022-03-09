@@ -16,19 +16,10 @@ public class MainAnimal {
 		cav.setIdade(5);
 		preg.setIdade(25);
 		
-		//ALTERANDO SOM
-		cac.setSom("AU AU AU");
-		cav.setSom("IRRRRI");
-		preg.setSom("INHA");
-        
-		//SAIDA
-		cac.saida();
-		cac.correr();
-		
-		cav.saida();
-		cav.correr();
-		
-		preg.saida();
-		preg.subir();
+		//POLIMORFISMO
+		cac.emitirSom();
+		cav.emitirSom();
+		preg.emitirSom();
+
 	}
 }

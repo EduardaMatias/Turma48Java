@@ -1,17 +1,13 @@
 package Ex001;
 
 public class Animal {
-	private String nome, som;
+	private String nome;
 	private int idade;
 
-	public String getSom() {
-		return som;
+	public void emitirSom() {
+		System.out.println("Som do animal");
 	}
-
-	public void setSom(String som) {
-		this.som = som;
-	}
-
+	
 	public String getNome() {
 		return nome;
 	}
@@ -27,10 +23,5 @@ public class Animal {
 	public void setIdade(int idade) {
 		this.idade = idade;
 	}
-	
-	public void saida() {
-		System.out.println("Nome: " + this.nome +
-				"\nIdade: " + this.idade +
-				"\nSom: " + this.som);
-	}
+
 }

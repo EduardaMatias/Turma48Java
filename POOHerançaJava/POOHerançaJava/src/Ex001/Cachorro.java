@@ -1,10 +1,14 @@
 package Ex001;
 
 public class Cachorro extends Animal {
-		boolean correr;
-		
-		public void correr() {
-			this.correr = true;
-			System.out.println("Pode correr \n\n");
-		}
+	
+	public void correr() {
+		boolean deveCorrer = true;
+		System.out.println("O animal pode correr: " + deveCorrer);
+	}
+	
+	@Override
+	public void emitirSom() {
+		System.out.println("AUAUAU");
+	}
 }

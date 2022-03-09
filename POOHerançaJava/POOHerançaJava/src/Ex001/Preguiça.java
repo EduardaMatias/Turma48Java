@@ -1,10 +1,14 @@
 package Ex001;
 
 public class Preguiça extends Animal{
-	boolean subir;
 	
 	public void subir() {
-		this.subir = true;
-		System.out.println("Pode subir");
+		boolean deveSubir = true;
+		System.out.println("O animal deve subir: " + deveSubir);
+	}
+	
+	@Override
+	public void emitirSom() {
+		System.out.println("NHAAAA");
 	}
 }
